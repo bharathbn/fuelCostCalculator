@@ -18,7 +18,7 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
         ApiKeyAuthFilter filter = new ApiKeyAuthFilter(Constants.API_KEY);
         filter.setAuthenticationManager(new ApiKeyAuthManager());
 
-        http.antMatcher("/v1/*").
+        http.antMatcher(Constants.AUTH_MATCHER_PATH).
                 csrf().
                 disable().
                 sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).

@@ -21,8 +21,10 @@ public class Constants {
 	public static final String RECIEVE_MESSAGE = "receiveMessage";
 	
 	
-	public static final String FUEL_COST_PATH = "/v1/fuelcost";
-	public static final String FUEL_EVENT_PATH = "/v1/fuelevent";
+	public static final String AUTH_MATCHER_PATH = "/fuelCostCalculator/v1/*";
+	public static final String FUEL_COST_PATH = "/fuelCostCalculator/v1/fuelcost";
+	public static final String FUEL_EVENT_PATH = "/fuelCostCalculator/v1/fuelevent";
+	
 	
 	public static final String USERID ="userId";
 	
