@@ -41,21 +41,26 @@ http://localhost:8080/fuelCostCalculator/v1/fuelevent
 Method : POST
 
 Headers : 
+ 
   userId:Bharath
+  
   API_KEY:Password1
+  
   Content-Type:application/json
 
 Body:
 
   {
     "eventValue" : false,
+    
     "cityName" : "Hassan"
   }
   
 Response : 
 
-Success - 202 Accepted 
- No API key -  400 Client Auth error.
+  Success - 202 Accepted 
+
+  No API key -  400 Client Auth error.
  
 2. 
 http://localhost:8080/fuelCostCalculator/v1/fuelcost  
@@ -63,11 +68,14 @@ http://localhost:8080/fuelCostCalculator/v1/fuelcost
 Method: GET
 
 Headers:
+
   userId:Bharath
+  
   API_KEY:Password1
 
 Response : 
  Success - 200 response body with JSON Array 
+ 
  No API key -  400 Client Auth error.
  
  
