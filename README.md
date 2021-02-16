@@ -10,18 +10,22 @@ This project has dependency on
   (https://www.newsrain.in/petrol-diesel-prices/near-me)
 
 How to Run:
+Download the project and navigate inside the project folder and run below docker commands
 
 1. 
-    Download the project and navigate inside the project folder and run below docker commands
-    docker image build -t benz-fuelcalculator
-    Docker-compose up 
+      docker image build -t benz-fuelcalculator
+      
+      Docker-compose up 
 
 OR
 
 2. 
     docker run -d -p 6379:6379 --name benzredis redis
+    
     docker run -it -d -p  15672:15672 -p 5672:5672 rabbitmq:3-management
+    
     mvn clean install
+    
     mvn spring-boot:run
 
 OR
