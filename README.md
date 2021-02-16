@@ -48,7 +48,7 @@ APIs Details:
 
     Headers : 
 
-      userId:Bharath
+      userId:Bharath (user can add his id)
 
       API_KEY:Password1
 
@@ -75,7 +75,7 @@ APIs Details:
 
     Headers:
 
-      userId:Bharath
+      userId:Bharath (user can add his id)
 
       API_KEY:Password1
 
