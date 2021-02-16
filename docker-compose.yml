@@ -1,0 +1,48 @@
+version: "3.0"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq-container
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - benz
+
+  redis:
+    image: redis
+    container_name: redis
+    hostname: redis-container
+    ports:
+      - "6379:6379"
+    networks:
+      - benz
+
+  benzfuelcalculator:
+    image: benz-fuelcalculator
+    container_name: benz-fuelcalculator
+    ports:
+      - "8080:8080"
+    environment:
+      - spring_rabbitmq_host=rabbitmq-container
+      - spring_rabbitmq_port=5672
+      - spring_rabbitmq_username=guest
+      - spring_rabbitmq_password=guest
+      - benz_rabbitmq_exchange=benz.exchange
+      - benz_rabbitmq_queue=benz.queue
+      - benz_rabbitmq_routingkey=benz.routingkey
+      - spring_cache_type=redis 
+      - spring_redis_host=redis-container 
+      - spring_redis_port=6379
+      - spring_cache_redis_time-to-live=600000
+      - logging.level.org.springframework.cache=TRACE
+    depends_on:
+      - rabbitmq
+      - redis
+    networks:
+      - benz
+networks:
+  benz:
+    external:
+      name: benz
