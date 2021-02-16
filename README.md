@@ -12,6 +12,7 @@ This project has dependency on
 ----------------------------------------------------------------------------------------------------------------------------------
 
 How to Run:
+
 Download the project and navigate inside the project folder and run below docker commands
 
 1. 
@@ -39,6 +40,7 @@ OR
 ----------------------------------------------------------------------------------------------------------------------------------
 
 APIs Details:
+
 
 1. http://localhost:8080/fuelCostCalculator/v1/fuelevent 
 
