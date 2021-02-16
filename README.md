@@ -47,6 +47,7 @@ APIs Details:
     Body:
 
       {
+        
         "eventValue" : false,
 
         "cityName" : "Hassan"
