@@ -9,6 +9,8 @@ This project has dependency on
 4. Hitting 3rd party API through RESTTemplate - https://www.newsrain.in/petrol-diesel-prices/near-lat-long/13.00288/76.10245 
   (https://www.newsrain.in/petrol-diesel-prices/near-me)
 
+----------------------------------------------------------------------------------------------------------------------------------
+
 How to Run:
 Download the project and navigate inside the project folder and run below docker commands
 
@@ -33,6 +35,8 @@ OR
 3.
     Download the project and import it in spring STS and click on Run as SpringBoot application
 
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 APIs Details:
 
@@ -79,6 +83,7 @@ APIs Details:
      No API key -  400 Client Auth error.
 
  
+ ----------------------------------------------------------------------------------------------------------------------------------
  
  
 
