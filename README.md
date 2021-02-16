@@ -31,12 +31,8 @@ OR
 
 
 APIs Details:
+
 1. http://localhost:8080/fuelCostCalculator/v1/fuelevent 
-2. http://localhost:8080/fuelCostCalculator/v1/fuelcost  
-
-
-1.
-http://localhost:8080/fuelCostCalculator/v1/fuelevent 
 
     Method : POST
 
@@ -62,8 +58,7 @@ http://localhost:8080/fuelCostCalculator/v1/fuelevent
 
       No API key -  400 Client Auth error.
  
-2. 
-http://localhost:8080/fuelCostCalculator/v1/fuelcost  
+2. http://localhost:8080/fuelCostCalculator/v1/fuelcost  
 
     Method: GET
 
