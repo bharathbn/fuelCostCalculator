@@ -98,6 +98,29 @@ APIs Details:
 
      No API key -  400 Client Auth error.
 
+  Response Body:
+  
+    [
+      {
+          "id": 2,
+          "userId": "Bharath",
+          "cityName": "Hassan",
+          "fuelPrice": 92.80000305175781,
+          "openTime": 1613537452903,
+          "closeTime": 1613537491073,
+          "cost": 117.54667053222656
+      },
+      {
+          "id": 4,
+          "userId": "Bharath",
+          "cityName": "Bengaluru",
+          "fuelPrice": 92.80000305175781,
+          "openTime": 1613537525714,
+          "closeTime": 1613537531618,
+          "cost": 15.466667175292969
+      }
+  ]
+
  
  ----------------------------------------------------------------------------------------------------------------------------------
  
