@@ -2,11 +2,14 @@
 
 This project provide the service end point to send the Events periodically and calculate the total fuel cost and store it in db.
 
-This project has dependency on 
-1. Maven - spring boot
-2. RabbitMQ (runnign docker image)
-3. Redis (running docker image)
-4. Hitting 3rd party API through RESTTemplate - https://www.newsrain.in/petrol-diesel-prices/near-lat-long/13.00288/76.10245 
+This project used 
+1. Maven
+2. spring boot - web
+3. spring boot - Security
+4. spring boot - jpa
+5. RabbitMQ - Messaging Queue (docker image)
+6. Redis -  Cacheing  (docker image)
+7. Hitting 3rd party API through RESTTemplate - https://www.newsrain.in/petrol-diesel-prices/near-lat-long/13.00288/76.10245 
   (https://www.newsrain.in/petrol-diesel-prices/near-me)
 
 ----------------------------------------------------------------------------------------------------------------------------------
