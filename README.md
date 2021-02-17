@@ -8,7 +8,7 @@ This project used
 3. spring boot - Security
 4. spring boot - jpa
 5. RabbitMQ - Messaging Queue (docker image)
-6. Redis -  Cacheing  (docker image)
+6. Redis -  Caching  (docker image)
 7. Hitting 3rd party API through RESTTemplate - https://www.newsrain.in/petrol-diesel-prices/near-lat-long/13.00288/76.10245 
   (https://www.newsrain.in/petrol-diesel-prices/near-me)
 
